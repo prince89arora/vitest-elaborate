@@ -4,8 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "test": "vitest run test",
-    "validate": "eslint . --fix",
+    "validate": "eslint ./src --fix",
     "prepare": "husky"
   },
   "keywords": [],

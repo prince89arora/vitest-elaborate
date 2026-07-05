@@ -1,4 +1,4 @@
-import type { SlownessConfig, SlownessLevel } from "./types/test-module.js";
+import type { SlownessConfig, SlownessLevel } from "./types/slowness";
 
 export const SlownessMapping: Record<SlownessLevel, SlownessConfig> = {
     

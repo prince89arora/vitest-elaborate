@@ -1,4 +1,3 @@
-
 export type SlownessLevel = 'critical' | 'high' | 'medium' | 'low'; 
 
 export interface SlownessConfig {
@@ -9,5 +8,4 @@ export interface SlownessConfig {
 export interface SlowTest {
     duration: number;
     level: SlownessLevel;
-    relativePath: string;
 }

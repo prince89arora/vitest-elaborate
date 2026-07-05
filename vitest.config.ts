@@ -1,10 +1,11 @@
 import { defineConfig } from 'vitest/config';
-import CustomReporter from './src/index.js';
+import { SlownessReporter } from './src/index.js';
 
 export default defineConfig({
     test: {
-        slowTestThreshold: 0,
-        reporters: [new CustomReporter(), 'default']
+        slowTestThreshold: 2,
+        testTimeout: 300,
+        reporters: [new SlownessReporter(), 'default']
     }
 
 })
